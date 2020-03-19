@@ -1,8 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/bg-body.png);
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#banner {
+    display: block;
+    margin: 20px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    border-radius: 50%;
+    border: solid 2px #333;
+    margin: 20px;
+    align-self: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+header nav ul li {
+    width: calc(100%/6 - 100px/6);
+}
+
+header nav ul a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    width: calc(100%/3 - 40px/3);
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto h2 {
+    font-size: 1.2rem;
+}
+
+.produto a {
+    background-color: #333;
+    color: #fff;
+    font-size: .7rem;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #B1111D;
+    border: solid 1px #B1111D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 60px;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
