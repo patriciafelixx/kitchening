@@ -121,6 +121,11 @@ footer ul {
 
 footer li {
     padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+
+footer li:last-child{
+	border-right: none;
 }
 
 footer a {
@@ -150,8 +155,6 @@ footer a {
     footer ul li {
         line-height: 25px;
         font-size: 1rem;
-    }
-    .vbar {
-        display: none;
+        border-right: none;
     }
 }
