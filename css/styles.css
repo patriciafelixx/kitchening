@@ -56,12 +56,18 @@ header nav ul li {
 
 header nav ul a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 5px;
     text-decoration: none;
     background-color: #333;
     color: #fff;
     width: 100%;
     text-align: center;
+}
+
+.icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
 }
 
 main {
@@ -96,7 +102,7 @@ main {
 
 footer {
     background-color: #B1111D;
-    border: solid 1px #B1111D;
+    padding: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-top: 10px;
@@ -106,15 +112,46 @@ footer ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    height: 60px;
+    height: 100%;
     align-items: center;
     color: #fff;
     font-size: 0.8rem;
+    padding: 0;
+}
+
+footer li {
+    padding: 0 10px;
 }
 
 footer a {
     text-decoration: none;
     color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+
+@media (max-width: 760px) {
+    .icon {
+        display: block;
+    }
+    header nav ul {
+        display: none;
+    }
+    .produto {
+        width: calc(100%/2 - 20px/2);
+    }
+}
+
+@media (max-width: 540px) {
+    .produto {
+        width: calc(100%);
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    footer ul li {
+        line-height: 25px;
+        font-size: 1rem;
+    }
+    .vbar {
+        display: none;
+    }
 }
